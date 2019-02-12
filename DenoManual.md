@@ -98,4 +98,26 @@ cd deno
 PYTHONPATH=third_party/python_packages deno ./tools/format.ts --allow-read --allow-run
 ```
 
+#### 先决条件
+为了确保可重现的构建，deno在git子模块中具有大部分依赖性。 但是，您需要单独安装：
+
+1. Rust >= 1.31.1
+2. Node
+3. Python 2 而非 Python 3
+
+Mac用户的额外步骤：
+
+1. XCode
+2. (可选) Openssl 1.1: brew install openssl@1.1
+
+Windows用户的额外步骤：
+
+将 python.exe 添加到 PATH（例如，设置 PATH=%PATH%;C:\Python27\python.exe）
+使用 C++ 工具包获取 VS Community 2017 with Desktop 开发，并确保选择下面列出的以下所需工具以及所有 C++工具。
+
+* Windows 10 SDK >= 10.0.17134
+* 用于 x86 和 x64 的 Visual C++ ATL
+* 用于 x86 和 x64 的 Visual C++ MFC
+* C++分析工具
+
 （未完待续）
