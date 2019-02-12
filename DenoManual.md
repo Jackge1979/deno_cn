@@ -43,20 +43,20 @@ Deno适用于OSX，Linux和Windows。 Deno是一个单独的二进制可执行�
 
 deno_install提供了下载和安装二进制文件的便捷脚本。
 
-使用Shell：
+* 使用Shell：
 
 ```
 curl -fL https://deno.land/x/install/install.sh | sh
 ```
 
-或者 使用PowerShell：
+* 使用PowerShell：
 
 ```
 iex (iwr https://deno.land/x/install/install.ps1)
 ```
 注意：根据您的安全设置，您可能必须首先运行Set-ExecutionPolicy RemoteSigned -Scope Current User以允许执行下载的脚本。
 
-使用Scoop：
+* 使用Scoop：
 
 ```
 scoop install deno
