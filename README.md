@@ -2,7 +2,7 @@
 ## 免责声明
 需要注意的是：Deno正处于开发阶段。 我们鼓励勇敢的早期开发者，但是需要说明的是它可能存在很多的错误，并且API可能没有任何通知的时候随时更改。
 
-您通过 https://github.com/denoland/deno/issues 报告错误，这将对我们有很大帮助！
+您通过 https://github.com/denoland/deno/issues 报告错误，这将对我们有很大帮助！
 
 ## 介绍
 ### 信条
