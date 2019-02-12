@@ -23,9 +23,11 @@ Deno是固执己见的，定义了样式指南并具有自动格式化程序。
 * 支持TypeScript开箱即用。
 * 没有package.json。 没有。 未与Node明确兼容。
 * 与浏览器一样，允许从URL导入：
+  
   ```
   import * as log from "https://deno.land/x/std/log/mod.ts";
   ```
+
 * 远程代码在首次执行时被提取和缓存，并且在使用 --reload 标志运行代码之前永远不会更新。 （所以，这仍然适用于飞机。有关缓存的详细信息，请参阅 ~/.deno/src。）
 * 使用“ES模块”并且不支持 require()。
 * 可以控制文件系统和网络访问以运行沙盒代码。 V8（非特权）和 Rust（特权）之间的访问，只能通过此 flatbuffer 中定义的序列化消息完成。 这使审计变得容易。 例如，要启用写访问，请使用标志 --allow-write 或网络访问 --allow-net。
