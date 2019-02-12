@@ -108,7 +108,7 @@ PYTHONPATH=third_party/python_packages deno ./tools/format.ts --allow-read --all
 Mac用户的额外步骤：
 
 1. XCode
-2. (可选) Openssl 1.1: brew install openssl@1.1
+2. (可选) Openssl 1.1: brew install openssl@1.1
 
 Windows用户的额外步骤：
 
