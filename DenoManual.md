@@ -70,4 +70,4 @@ scoop install deno
 deno https://deno.land/welcome.js
 ```
 
-### 3.2 从源文件编译安装
+### 3.2 从源文件编译安装
