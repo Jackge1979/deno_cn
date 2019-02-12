@@ -71,4 +71,29 @@ deno https://deno.land/welcome.js
 ```
 
 ### 3.2 从源文件编译安装
+
+```
+# Fetch deps.
+git clone --recurse-submodules https://github.com/denoland/deno.git
+cd deno
+./tools/setup.py
+
+# You may need to ensure that sccache is running.
+# (TODO it's unclear if this is necessary or not.)
+# prebuilt/mac/sccache --start-server
+
+# Build.
+./tools/build.py
+
+# Run.
+./target/debug/deno tests/002_hello.ts
+
+# Test.
+./tools/test.py
+
+# Format code.
+# TODO: set PYTHONPATH in format.ts when run API has env option.
+PYTHONPATH=third_party/python_packages deno ./tools/format.ts --allow-read --allow-run
+```
+
 （未完待续）
