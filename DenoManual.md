@@ -120,4 +120,41 @@ Windows用户的额外步骤：
 * 用于 x86 和 x64 的 Visual C++ MFC
 * C++分析工具
 
+1. 启用Windows调试工具。 转到控制面板→程序→程序和功能→选择Windows软件开发工具包-Windows 10→更改→更改→检查Windows调试工具→更改→完成。
+
+其他有用的命令：
+```
+# Call ninja manually.
+./third_party/depot_tools/ninja -C target/debug
+
+# Build a release binary.
+DENO_BUILD_MODE=release ./tools/build.py :deno
+
+# List executable targets.
+./third_party/depot_tools/gn ls target/debug //:* --as=output --type=executable
+
+# List build configuration.
+./third_party/depot_tools/gn args target/debug/ --list
+
+# Edit build configuration.
+./third_party/depot_tools/gn args target/debug/
+
+# Describe a target.
+./third_party/depot_tools/gn desc target/debug/ :deno
+./third_party/depot_tools/gn help
+
+# Update third_party modules
+git submodule update
+```
+
+环境变量：DENO_BUILD_MODE，DENO_BUILD_PATH，DENO_BUILD_ARGS，DENO_DIR。
+
+## 4 API 参考
+### deno --types
+要获得deno运行时API的参考，请在命令行中运行以下命令：
+
+```
+deno --types
+```
+
 （未完待续）
