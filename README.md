@@ -1,4 +1,6 @@
 # deno 中文手册
+node.js之父Ryan Dahl 发起的新项目：deno，力争打造一个基于 v8 引擎的安全的 TypeScript 运行时，同时实现 HTML5 的基础 API 。
+
 ## 声明
 原文来自：https://deno.land
 
